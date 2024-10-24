@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-title"><h1>Магазин</h1></div>
+            <div class="logo-img"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAA+NJREFUWEftmGuIVVUUx39/VNCyNLAoKjQhU8OQMv1oGr0gJcnHl5DM7EMGQibSQ9K0sqiICqUMDSrM7AFBkRZpX4QSlSLCpKKMTE0okzQIWs6a9hnW3fecuTN37sQEs+DC2Wuvx/+svdfjXNGHSX0YG/9/cGY2H7ijhVH+EXhN0ked2WwYOTN7Gri3hcCiqbslra+y3Sk4M7sa+LyXgBVmJ0vaXeajEbg9wJVJ8S/gs2DkAmBMWH+aOZga1t8Ah8N6CjA4rfdKuqpb4MxsMfBCUFohaU2xNrNHgQfS+qCkkdGBmR0ELk68NZJWBF1/fiTIL5a0LgdYGjkzGwF8D5yVFPx5rKS/g4NtwPVp/Y6kWzNw7wK3JN6Hkm4KuoOA/cDoxPsduFTSsWijCtwm4PYgOF3Sjsy5GxyWeA9KeizbfwhYnXjHJQ3P9qcBnwTeJkk1FaEOXEkSbJU0NzPsb/xd4N0gaXsm45H6IPBGSfIS0kFmthWYHVg1yVEDzswGAHuBK5LCKQ+9pHiZMbN5bcf8RjA6XNLxzPF5wJHAmy3p7Uzm/HR9hiT+l8BESebrHNwi4KVgYKmkZ6JBfzazJ4Flif+DpEtymST3E3BR2ntcUpFAMXpLgaeC/iJJL5eB2wDcmQQPSLqswqkfV3HBt0m6sULuY+DatPe+pJsr5A54QqS9DZLuKgPnncA7gtMhSReWRO3stlbmZaJIhsOSvObVkZn5sfrxOv3mpUXSnyU2fwH8iJ2WSHquDNx1QLzYt0l6vTBmZmcCm4EZmYOaOuZ72dEX4p4A8yV5QW8nM1sAbAz2pknaWQcuCX8FXB6EXdFrmhfUe4BRZVEC3mrTc+cDAU+YmRVy3wLPA7+mI18Y5PZJKjpS/chkZhOBfRWGI/skcEYX5DxK/3RRdoIkD047VRXh9lTuhLzGefX3TPRoDa2Q/QOYBRxt69HvAaVZ3QFGqsHTFXA/A54Y7sDrkDf/JySdSNfAAXoiecT951H6AvBJ49miRpqZJ9L9wCTAG/05QGH730g1AW6uJI9Oy8nMvPNs6Unk+sE1e6xzJHmZqCEz82FxOeCDY1XWekbvinNgNGJmc4A3e3KsdeASME+MYkBodB93S5pc8oK9Am6JZ2IjRNl+R0Mv+L0VuTiMeqX/ugLoeODctNfR0FsJri5bsyGxbhgNzuMwWTa0tr6U9IPrYm/t08e6Esg/mB8Grkl3y2evVRUJ0UjObbhMt3qrf6HHr/luVo2mxPdLGhc1q6YSn+FfbMpF80oLJL3SEJwLmJl/id33H0TQa+RaSa/m79XwL7DmA9FzzX5wzcawT0fuNDnKwzfUY5EaAAAAAElFTkSuQmCC"/></div>
+        </div>
+        <a href="./login.html"><button class="forSeller">Для продавців</button></a>
+    </header>
+    
+        <script>document.getElementById('sellerBtn').addEventListener('click', () => {
+            window.location.href = 'login.html';
+        });
+    </script>
+
+    <div id="products">
+
+    </div>
+
+    <script type="module" src="js/shop.js"></script>
+
+
+</body>
+
+</html>
