@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Emoji:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Emoji:wght@300..700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&family=Sixtyfour+Convergence&display=swap');
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background: rgb(0, 0, 0);
+}
+
+.header-logo-name {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    margin-left: 154px;
+}
+
+.header-button-exit {
+    width: 100px;
+    height: 30px;
+    margin-right: 154px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    color: #ffffff;
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.header-button-exit:hover {
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#productForm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 500px;
+
+}
+
+#productForm label {
+    width: 100%;
+    text-align: start;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#productForm input {
+    height: 40px;
+    border-radius: 50px;
+    padding: 0 20px;
+}
+
+#productForm button {
+    background: #000000;
+    color: white;
+    width: 230px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#productList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    width: 70%;
+    gap: 15px;
+    min-height: 600px;
+}
+
+#productList div {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 350px;
+    padding: 5px;
+    border-radius: 10px;
+    border: black solid 1px;
+    background: #0000000e;
+}
+
+#productList img {
+    width: 145px;
+    height: 145px;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+
+#productList p {
+    text-align: start;
+    margin-top: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    border-bottom: 1px solid black;
+}
+
+#productList button {
+    background: #ff87fbbc;
+    color: white;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+}

@@ -1,34 +1,299 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Магазин Зупиночка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./src/img/favicon/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+  
+
     <header>
-        <div class="logo">
-            <div class="logo-title"><h1>Магазин</h1></div>
-            <div class="logo-img"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAA+NJREFUWEftmGuIVVUUx39/VNCyNLAoKjQhU8OQMv1oGr0gJcnHl5DM7EMGQibSQ9K0sqiICqUMDSrM7AFBkRZpX4QSlSLCpKKMTE0okzQIWs6a9hnW3fecuTN37sQEs+DC2Wuvx/+svdfjXNGHSX0YG/9/cGY2H7ijhVH+EXhN0ked2WwYOTN7Gri3hcCiqbslra+y3Sk4M7sa+LyXgBVmJ0vaXeajEbg9wJVJ8S/gs2DkAmBMWH+aOZga1t8Ah8N6CjA4rfdKuqpb4MxsMfBCUFohaU2xNrNHgQfS+qCkkdGBmR0ELk68NZJWBF1/fiTIL5a0LgdYGjkzGwF8D5yVFPx5rKS/g4NtwPVp/Y6kWzNw7wK3JN6Hkm4KuoOA/cDoxPsduFTSsWijCtwm4PYgOF3Sjsy5GxyWeA9KeizbfwhYnXjHJQ3P9qcBnwTeJkk1FaEOXEkSbJU0NzPsb/xd4N0gaXsm45H6IPBGSfIS0kFmthWYHVg1yVEDzswGAHuBK5LCKQ+9pHiZMbN5bcf8RjA6XNLxzPF5wJHAmy3p7Uzm/HR9hiT+l8BESebrHNwi4KVgYKmkZ6JBfzazJ4Flif+DpEtymST3E3BR2ntcUpFAMXpLgaeC/iJJL5eB2wDcmQQPSLqswqkfV3HBt0m6sULuY+DatPe+pJsr5A54QqS9DZLuKgPnncA7gtMhSReWRO3stlbmZaJIhsOSvObVkZn5sfrxOv3mpUXSnyU2fwH8iJ2WSHquDNx1QLzYt0l6vTBmZmcCm4EZmYOaOuZ72dEX4p4A8yV5QW8nM1sAbAz2pknaWQcuCX8FXB6EXdFrmhfUe4BRZVEC3mrTc+cDAU+YmRVy3wLPA7+mI18Y5PZJKjpS/chkZhOBfRWGI/skcEYX5DxK/3RRdoIkD047VRXh9lTuhLzGefX3TPRoDa2Q/QOYBRxt69HvAaVZ3QFGqsHTFXA/A54Y7sDrkDf/JySdSNfAAXoiecT951H6AvBJ49miRpqZJ9L9wCTAG/05QGH730g1AW6uJI9Oy8nMvPNs6Unk+sE1e6xzJHmZqCEz82FxOeCDY1XWekbvinNgNGJmc4A3e3KsdeASME+MYkBodB93S5pc8oK9Am6JZ2IjRNl+R0Mv+L0VuTiMeqX/ugLoeODctNfR0FsJri5bsyGxbhgNzuMwWTa0tr6U9IPrYm/t08e6Esg/mB8Grkl3y2evVRUJ0UjObbhMt3qrf6HHr/luVo2mxPdLGhc1q6YSn+FfbMpF80oLJL3SEJwLmJl/id33H0TQa+RaSa/m79XwL7DmA9FzzX5wzcawT0fuNDnKwzfUY5EaAAAAAElFTkSuQmCC"/></div>
+        <div class="container">
+
+            <div class="logo-header">
+                <h1>Zupinochka</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Студія</a></li>
+                    <li><a href="./product.html">Товари</a></li>
+                    <li><a href="#" class="open-modal">Співпраця</a></li>
+                </ul>
+            </nav>
+
+            <div class="contact-info">
+                <a href="mailto:info@devstudio.com" class="active">info@devstudio.com</a>
+                <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
+
         </div>
-        <a href="./login.html"><button class="forSeller">Для продавців</button></a>
+
     </header>
-    
-        <script>document.getElementById('sellerBtn').addEventListener('click', () => {
-            window.location.href = 'login.html';
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Живі квіти,що приносять <br> радість — замов прямо тут!</h1>
+                <button id="openModalBtn" class="open-modal">Замовити квіти</button>
+            </div>
+        </section>
+
+        <section class="features">
+
+            <div class="feature">
+                <img src="data:image/png;base64,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" alt="" class="feature-foto">
+                <h3>Вишуканість у кожній деталі</h3>
+                <p>Наші букети створюються з турботою та увагою до кожної пелюстки, щоб дарувати радість.</p>
+            </div>
+            
+            <div class="feature">
+                <img src="data:image/png;base64,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" alt="" class="feature-foto">
+                <h3>Швидка доставка</h3>
+                <p>Доставляємо ваші квіти вчасно, щоб кожне привітання було особливим і своєчасним.</p>
+            </div>
+            
+            <div class="feature">
+                <img src="data:image/png;base64,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" alt="" class="feature-foto">
+                <h3>Індивідуальні замовлення</h3>
+                <p>Підберемо букет за вашими побажаннями, щоб він відобразив ваші почуття і стиль.</p>
+            </div>
+            
+            <div class="feature">
+                <img src="data:image/png;base64,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" alt="" class="feature-foto">
+                <h3>Живі привітання</h3>
+                <p>Додайте свята! Ми організуємо костюмовані вітання, щоб кожен подарунок був незабутнім.</p>
+            </div>
+
+        </section>
+
+        <section class="activities">
+
+            <h2>Чим ми займаємося</h2>
+
+            <div class="activity">
+                <img src="./18180552_8868food (1).jpg" alt="Service1">
+                <div class="rectangle-activities">
+                    <h3 class="rectangle-activity">Продукти</h3>
+                </div>
+            </div>
+
+            <div class="activity">
+                <img src="./DALL·E 2024-10-25 13.01.19 - An .jpg" alt="Service2">
+                <div class="rectangle-activities">
+                    <h3 class="rectangle-activity">Букети</h3>
+                </div>
+            </div>
+
+            <div class="activity">
+                <img src="./4338895863_w600_h600_4338895863 (1).jpg" alt="Service3">
+                <div class="rectangle-activities">
+                    <h3 class="rectangle-activity">Привітання</h3>
+                </div>
+            </div>
+
+        </section>
+        <section class="team">
+
+            <h2>Наша команда</h2>
+
+            <div class="team-members">
+
+                <div class="team-member">
+                    <img src="./src/img/team/team-foto-1.jpg" alt="ІгорДем'яненко">
+                    <h3>Ігор Дем'яненко</h3>
+                    <p>Product Designer</p>
+                    <div class="team-social">
+                        <div class="team-social-symbol team-social1"></div>
+                        <div class="team-social-symbol team-social2"></div>
+                        <div class="team-social-symbol team-social3"></div>
+                        <div class="team-social-symbol team-social4"></div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <img src="./src/img/team/team-foto-2.jpg" alt="ОльгаРєпіна">
+                    <h3>Ольга Рєпіна</h3>
+                    <p>Frontend Developer</p>
+                    <div class="team-social">
+                        <div class="team-social-symbol team-social1"></div>
+                        <div class="team-social-symbol team-social2"></div>
+                        <div class="team-social-symbol team-social3"></div>
+                        <div class="team-social-symbol team-social4"></div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <img src="./src/img/team/team-foto-3.jpg" alt="МиколаТарасов">
+                    <h3>Микола Тарасов</h3>
+                    <p>Marketing</p>
+                    <div class="team-social">
+                        <div class="team-social-symbol team-social1"></div>
+                        <div class="team-social-symbol team-social2"></div>
+                        <div class="team-social-symbol team-social3"></div>
+                        <div class="team-social-symbol team-social4"></div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <img src="./src/img/team/team-foto-4.jpg" alt="МихайлоЄрмаков">
+                    <h3>Михайло Єрмаков</h3>
+                    <p>UI Designer</p>
+                    <div class="team-social">
+                        <div class="team-social-symbol team-social1"></div>
+                        <div class="team-social-symbol team-social2"></div>
+                        <div class="team-social-symbol team-social3"></div>
+                        <div class="team-social-symbol team-social4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location">
+            <h2>Наша локація</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1267.33270656135!2d23.71188852442441!3d48.05992729682039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473799cb696eeb03%3A0x7581a37803b99571!2zItCX0YPQv9C40L3QvtGH0LrQsCI!5e1!3m2!1sru!2sua!4v1729849812831!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container-footer">
+
+            <div class="logo-footer">
+                <h1>Zupinochka</h1>
+            </div>
+
+            <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+
+            <p><a href="info@devstudio.com" class="footer-link">info@devstudio.com</a></p>
+
+            <p><a href="+380961111111" class="footer-link">+38 096 111 11 11</a></p>
+        </div>
+
+        <div class="footer-social">
+
+            <div class="social-tittle">приєднуйтесь</div>
+
+            <div class="social-all">
+                <a href="#" class="social footer-social-foto1"></a>
+                <a href="#" class="social footer-social-foto2"></a>
+                <a href="#" class="social footer-social-foto3"></a>
+                <a href="#" class="social footer-social-foto4"></a>
+            </div>
+        </div>
+
+        <div class="mailing-list">
+            <div class="tittle-mailing-list">Підпишіться на розсилку</div>
+            <input type="text" class="mailing-list-input" placeholder="E-mail">
+        </div>
+        <button class="mailing-list-button">Підписатися<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
+                    fill="white" />
+            </svg></button>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+
+            <h2>Залиште свої дані, ми вам передзвонимо</h2>
+
+            <span class="close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="15" fill="white" />
+                    <circle cx="15" cy="15" r="14.5" stroke="black" stroke-opacity="0.1" />
+                    <path
+                        d="M21 10.1079L19.8921 9L15.5 13.3921L11.1079 9L10 10.1079L14.3921 14.5L10 18.8921L11.1079 20L15.5 15.6079L19.8921 20L21 18.8921L16.6079 14.5L21 10.1079Z"
+                        fill="black" />
+                </svg>
+            </span>
+            <form>
+                <div class="form"></div>
+                <div class="form-group">
+                    <label for="name">Ім'я</label><br>
+                    <input type="text" id="name" name="name" placeholder="" required><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <g clip-path="url(#clip0_12_6447)">
+                            <path
+                                d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z"
+                                fill="#212121" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12_6447">
+                                <rect width="18" height="18" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Номер телефону</label>
+                    <input type="tel" id="phone" name="phone" placeholder="" required><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <g clip-path="url(#clip0_12_6453)">
+                            <path
+                                d="M13.996 11.1226L12.1579 10.9127C11.7164 10.862 11.2822 11.014 10.9711 11.3252L9.63948 12.6568C7.59147 11.6147 5.91254 9.94296 4.87044 7.8877L6.20925 6.54888C6.52043 6.2377 6.6724 5.80349 6.62174 5.36205L6.41188 3.53836C6.32504 2.80745 5.70991 2.25745 4.97176 2.25745H3.71979C2.90203 2.25745 2.22178 2.93771 2.27243 3.75547C2.65598 9.93572 7.59871 14.8712 13.7717 15.2548C14.5894 15.3054 15.2697 14.6252 15.2697 13.8074V12.5555C15.2769 11.8245 14.7269 11.2094 13.996 11.1226Z"
+                                fill="#212121" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12_6453">
+                                <rect width="18" height="18" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" required><svg xmlns="http://www.w3.org/2000/svg"
+                        width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <g clip-path="url(#clip0_12_6459)">
+                            <path
+                                d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM14.7 6.1875L9.3975 9.5025C9.1575 9.6525 8.8425 9.6525 8.6025 9.5025L3.3 6.1875C3.1125 6.0675 3 5.865 3 5.6475C3 5.145 3.5475 4.845 3.975 5.1075L9 8.25L14.025 5.1075C14.4525 4.845 15 5.145 15 5.6475C15 5.865 14.8875 6.0675 14.7 6.1875Z"
+                                fill="#212121" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12_6459">
+                                <rect width="18" height="18" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Коментар</label><br>
+                    <input id="comment" name="comment" placeholder="Введіть текст" rows="3"></input>
+                </div>
+
+                <div class="form-submit">
+                    <label>
+                        <input type="checkbox" name="newsletter" required> Погоджуюсь з розсилкою та приймаю <a
+                            href="#">Умови договору</a>
+                    </label>
+                </div>
+                <div class="button-submit">
+                    <button type="submit" class="submit-btn">Відправити</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.getElementById("loader").classList.add("hidden");
+            }, 1000); 
         });
     </script>
-
-    <div id="products">
-
-    </div>
-
-    <script type="module" src="js/shop.js"></script>
-
-
 </body>
-
 </html>

@@ -5,10 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Register form</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
-    rel='stylesheet'>
-    <link rel="stylesheet" href="css/form.css">
+    <title>Вхід до панелі продавця</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
 
 </head>
 
@@ -95,26 +94,26 @@
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
-      
+
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         const firebaseConfig = {
-          apiKey: "AIzaSyD8C7SPhWbWcV8OzUL6ITE9bxNBINf59XE",
-          authDomain: "first-project-1b329.firebaseapp.com",
-          projectId: "first-project-1b329",
-          storageBucket: "first-project-1b329.appspot.com",
-          messagingSenderId: "316947894802",
-          appId: "1:316947894802:web:a8f54005f3fbf062b1fecb",
-          measurementId: "G-6K6YFNZ27V"
+            apiKey: "AIzaSyD8C7SPhWbWcV8OzUL6ITE9bxNBINf59XE",
+            authDomain: "first-project-1b329.firebaseapp.com",
+            projectId: "first-project-1b329",
+            storageBucket: "first-project-1b329.appspot.com",
+            messagingSenderId: "316947894802",
+            appId: "1:316947894802:web:a8f54005f3fbf062b1fecb",
+            measurementId: "G-6K6YFNZ27V"
         };
-      
+
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
-      </script>
-    <script type="module" src="js/firebase.js"></script>
-    <script type="module" src="js/app.js"></script>
-    <script src="js/script.js"></script>
+    </script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="app.js"></script>
+    <script src="login.js"></script>
 </body>
 
-</html> 
+</html>

@@ -23,5 +23,3 @@ export { auth };
 const registerForm = document.getElementById('registerForm');
 const errorMessage = document.getElementById('error-message');
 
-
-// Ініціалізація Firebase

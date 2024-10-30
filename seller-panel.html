@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель продавця</title>
+    <link rel="stylesheet" href="./seller.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo-name">Панель продавця</div>
+        <a href="./product.html" target=""><button class="header-button-exit" id="logoutButton">Вийти</button></a>
+    </header>
+
+    <!-- Кнопка для виходу -->
+    
+
+    <form id="productForm">
+        <label for="productName">Назва товару:</label>
+        <input type="text" id="productName" required>
+
+        <label for="productPrice">Ціна:</label>
+        <input type="number" id="productPrice" required>
+
+        <label for="productDescription">Опис товару:</label>
+        <input id="productDescription" required></input>
+
+        <label for="productImage">Фото товару:</label>
+        <input type="file" id="productImage" accept="image/*" required>
+
+        <button type="submit">Додати товар</button>
+    </form>
+
+    <h2>Додані товари:</h2>
+    <div id="productList"></div>
+
+    <script src="product-seller-panel.js"></script>
+</body>
+</html>
